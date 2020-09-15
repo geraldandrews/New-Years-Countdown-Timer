@@ -1,0 +1,92 @@
+body { 
+   text-align: center; 
+   background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(new-year.jpg)no-repeat center center/cover; 
+   height: 100vh;
+   font-family: 'Orbitron', sans-serif; 
+   font-weight: 100; 
+}
+
+.countdown {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+ 
+h1 { 
+   color: #d3af37; 
+   font-weight: 100; 
+   font-size: 40px; 
+   margin: 40px 0px 20px; 
+   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.team {
+   color: yellow;
+   font-weight: 100;
+   font-size: 40px;
+   margin: 40px 0px 20px;
+   text-shadow: -1px 0 maroon, 0 1px maroon, 1px 0 maroon, 0 -1px maroon;
+}
+
+.vs {
+   color: #fff;
+   font-weight: 100;
+   font-size: 40px;
+   margin: 40px 0px 20px;
+} 
+
+#clockdiv { 
+   font-family: 'Orbitron', sans-serif; 
+   color: #fff; 
+   display: inline-block; 
+   font-weight: 100; 
+   text-align: center; 
+   font-size: 30px;
+ } 
+
+#clockdiv > div { 
+   padding: 10px; 
+   border-radius: 3px; 
+   background: linear-gradient(#f0e68c,#d3af37);
+   border: 2px solid #fff; 
+   display: inline-block; 
+}
+ 
+#clockdiv div > span { 
+   padding: 15px; 
+   border-radius: 3px; 
+   background: #000;
+   display: inline-block; 
+}
+
+smalltext { 
+   padding-top: 5px; 
+   font-size: 16px; 
+} 
+
+@media (max-width: 1024px) {
+   #clockdiv {
+      font-size: 24px;
+   }
+}
+
+@media (max-width:817px) {
+   .countdown {
+      width: 100%;
+   }
+
+   #clockdiv {
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 600px) {
+   #clockdiv {
+      display: flex;
+      font-size: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+   }
+}
