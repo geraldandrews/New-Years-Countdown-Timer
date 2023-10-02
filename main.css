@@ -89,4 +89,8 @@ smalltext {
       margin-right: auto;
       display: block;
    }
+
+   h1 {
+      font-size: 35px;
+   }
 }
